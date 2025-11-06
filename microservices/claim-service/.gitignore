@@ -1,0 +1,50 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# Copy this file to .env and fill in your real values
+# Keep .env in .gitignore so it's never pushed to GitHub
+
+# --- MySQL Database ---
+SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/claim_service_db
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=Sunil@1319
+
+# --- JWT Secret ---
+JWT_SECRET=thisisalongandsecuresecretkeyformyinsuranceclaimsystem
+
+# --- Linked Microservice URLs (optional overrides for cloud deployment) ---
+USER_SERVICE_URL=http://localhost:8081
+NOTIFICATION_SERVICE_URL=http://localhost:8084
+PAYMENT_SERVICE_URL=http://localhost:8086
